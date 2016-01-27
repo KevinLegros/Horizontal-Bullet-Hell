@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="data/level1.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/input.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/main_menu.js"></script>
+<script type="text/javascript" src="js/level.js"></script>
+<script type="text/javascript" src="js/entity.js"></script>
+<script type="text/javascript" src="js/bullet.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/enemy.js"></script>
+<script type="text/javascript" src="js/g.js"></script>
+</head>
+<body>
+<canvas id="canvas" width="1000" height="500" tabindex="1" style="outline: none;"></canvas>
+<div id="fps"></div>
+<div id="ticks"></div>
+<div id="elapsed"></div>
+<script type="text/javascript">		
+	var canvas = document.getElementById('canvas');
+	canvas.focus();
+	var g = new Game();
+	g.init();
+</script>
+</body>
+</html>
